@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishiraj Singh | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ===================== SITE HEADER / NAVIGATION ===================== -->
+    <header>
+        <nav class="navbar">
+
+            <h2 class="logo">Rishi<span>Codes</span></h2>
+
+            <!-- Hamburger icon: toggles .nav-links on small screens (see script.js) -->
+            <button class="menu-toggle" type="button" aria-label="Toggle navigation menu" aria-controls="nav-links">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certificates</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ===================== HERO ===================== -->
+        <section id="hero">
+
+            <!-- Filled with floating <span class="particle"> elements by script.js -->
+            <div id="particles"></div>
+
+            <div class="hero-content">
+
+                <img src="images/profile.png" alt="Profile Picture" class="profile-image">
+
+                <h1>Rishiraj Singh Rathore</h1>
+
+                <!-- Typed out character-by-character by script.js -->
+                <h3 id="typing-text"></h3>
+
+                <p>
+                    BCA Graduate | Networking Enthusiast |
+                    Building Skills Every Day
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="files/resume.pdf" class="btn pdf-link" target="_blank">View Resume</a>
+                    <a href="#contact" class="btn">Contact Me</a>
+                    <a href="https://github.com/" target="_blank" class="btn">GitHub</a>
+                    <a href="https://linkedin.com/" target="_blank" class="btn">LinkedIn</a>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ===================== ABOUT ===================== -->
+        <section id="about">
+            <div class="container">
+
+                <h2 class="section-title">About Me</h2>
+
+                <div class="about-content">
+
+                    <img src="images/background.jpg" alt="About Image" class="about-image">
+
+                    <div class="about-text">
+                        <p>
+                            Hello! I am Rishiraj Singh Rathore,
+                            a BCA graduate passionate about
+                            Cybersecurity and Web Development.
+                        </p>
+                        <p>
+                            I enjoy learning networking concepts,
+                            creating educational content, and
+                            building projects that improve my skills.
+                        </p>
+                        <p>
+                            My goal is to continuously grow as a
+                            developer and cybersecurity professional.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===================== EDUCATION (placeholder, no content yet) ===================== -->
+        <section id="education"></section>
+
+        <!-- ===================== SKILLS ===================== -->
+        <section id="skills">
+            <div class="container">
+
+                <h2 class="section-title">Skills</h2>
+
+                <!-- Repeated identical cards -> semantic list -->
+                <ul class="skills-grid">
+                    <li class="skill-card">HTML</li>
+                    <li class="skill-card">CSS</li>
+                    <li class="skill-card">JavaScript</li>
+                    <li class="skill-card">Networking</li>
+                    <li class="skill-card">Cybersecurity Basics</li>
+                    <li class="skill-card">MS Office</li>
+                </ul>
+
+                <!-- Progress bar widths are set in the original inline markup and
+                     animated from 0 by script.js on page load -->
+                <div class="skill-progress">
+
+                    <div class="progress-item">
+                        <h4>HTML</h4>
+                        <div class="progress-bar">
+                            <div class="progress html" style="width: 70%;">70%</div>
+                        </div>
+                    </div>
+
+                    <div class="progress-item">
+                        <h4>CSS</h4>
+                        <div class="progress-bar">
+                            <div class="progress css" style="width: 60%;">60%</div>
+                        </div>
+                    </div>
+
+                    <div class="progress-item">
+                        <h4>JavaScript</h4>
+                        <div class="progress-bar">
+                            <div class="progress js" style="width: 35%;">35%</div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ===================== CERTIFICATIONS ===================== -->
+        <section id="certifications">
+            <div class="container">
+
+                <h2 class="section-title">Certifications</h2>
+
+                <ul class="certificate-grid">
+
+                    <!-- Certificate 1 -->
+                    <li class="certificate-card">
+                        <h3>Introduction to Cybersecurity</h3>
+                        <p>Cisco Networking Academy</p>
+                        <button type="button" class="btn cert-view-btn" data-cert="certificates/Certificate1.pdf">View Certificate</button>
+                    </li>
+
+                    <!-- Certificate 2 -->
+                    <li class="certificate-card">
+                        <h3>Networking Basics</h3>
+                        <p>Cisco Networking Academy</p>
+                        <button type="button" class="btn cert-view-btn" data-cert="certificates/Certificate2.pdf">View Certificate</button>
+                    </li>
+
+                    <!-- Certificate 3 -->
+                    <li class="certificate-card">
+                        <h3>Networking Devices &amp; Basic Configuration</h3>
+                        <p>Cisco Networking Academy</p>
+                        <button type="button" class="btn cert-view-btn" data-cert="certificates/Certificate3.pdf">View Certificate</button>
+                    </li>
+
+                    <!-- Certificate 4 -->
+                    <li class="certificate-card">
+                        <h3>End-Point Security</h3>
+                        <p>Cisco Networking Academy</p>
+                        <button type="button" class="btn cert-view-btn" data-cert="certificates/Certificate4.pdf">View Certificate</button>
+                    </li>
+
+                </ul>
+
+            </div>
+        </section>
+
+        <!-- ===================== PROJECTS ===================== -->
+        <section id="projects">
+            <div class="container">
+
+                <h2 class="section-title">Projects</h2>
+
+                <ul class="projects-grid">
+
+                    <!-- Project 1 -->
+                    <li class="project-card">
+                        <img src="images/project1.jpeg" alt="Project 1">
+                        <div class="project-info">
+                            <h3>Resume Portfolio Website</h3>
+                            <p>
+                                Responsive personal portfolio website
+                                built using HTML, CSS and JavaScript.
+                            </p>
+                            <a href="#" class="btn">View Project</a>
+                        </div>
+                    </li>
+
+                    <!-- Project 2 -->
+                    <li class="project-card">
+                        <img src="images/project2.jpeg" alt="Project 2">
+                        <div class="project-info">
+                            <h3>Cybersecurity Learning Posts</h3>
+                            <p>
+                                Educational networking and cybersecurity
+                                carousel posts for Instagram.
+                            </p>
+                            <a href="#" class="btn">View Project</a>
+                        </div>
+                    </li>
+
+                    <!-- Project 3 -->
+                    <li class="project-card">
+                        <img src="images/project3.jpeg" alt="Project 3">
+                        <div class="project-info">
+                            <h3>Password Generator</h3>
+                            <p>
+                                A future JavaScript project to generate
+                                secure passwords.
+                            </p>
+                            <a href="#" class="btn">View Project</a>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </section>
+
+        <!-- ===================== TIMELINE (placeholder, no content yet) ===================== -->
+        <section id="timeline"></section>
+
+        <!-- ===================== CONTACT ===================== -->
+        <section id="contact">
+            <div class="container">
+
+                <h2 class="section-title">Contact Me</h2>
+
+                <div class="contact-card">
+                    <h3>Let's Connect 🚀</h3>
+
+                    <!-- <address> is the semantic tag for contact info;
+                         font-style is reset to normal in style.css since
+                         browsers italicize it by default -->
+                    <address>
+                        <p>Email: rathorerishi2002@gmail.com</p>
+                        <p>Instagram: @rishi_codes</p>
+                        <p>GitHub: github.com/dev_rishi2026</p>
+                        <p>LinkedIn: https://www.linkedin.com/in/rishiraj-s-rathore</p>
+                    </address>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer>
+        <div class="container">
+            <p>&copy; <time datetime="2026">2026</time> Rishiraj Singh Rathore</p>
+            <p>Made with ❤️ using HTML, CSS &amp; JavaScript</p>
+        </div>
+    </footer>
+
+    <!-- Light/dark mode toggle: fixed to the top-right corner (see #theme-btn
+         in style.css), so it stays visible no matter where you scroll -->
+    <button id="theme-btn" type="button" aria-label="Toggle dark mode">🌙</button>
+
+    <!-- PDF preview modal: opened by the "View Certificate" buttons and the
+         "View Resume" link above instead of navigating to the file directly,
+         so it previews in-page first. Hidden until one is clicked. -->
+    <div class="cert-modal" id="cert-modal" hidden>
+        <div class="cert-modal-backdrop" data-close-modal></div>
+        <div class="cert-modal-content">
+            <div class="cert-modal-toolbar">
+                <a id="cert-modal-download-link" class="btn cert-modal-download" href="#" download>Download</a>
+                <button type="button" class="cert-modal-close" id="cert-modal-close" aria-label="Close preview">&times;</button>
+            </div>
+            <iframe class="cert-modal-frame" id="cert-modal-frame" title="Document preview"></iframe>
+            <p class="cert-modal-fallback">
+                Preview not loading? <a id="cert-modal-fallback-link" href="#" target="_blank" rel="noopener">Open it in a new tab</a>.
+            </p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
